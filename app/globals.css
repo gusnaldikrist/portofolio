@@ -1,0 +1,128 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+@import "shadcn/tailwind.css";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-outfit), var(--font-geist-sans);
+  --font-heading: var(--font-syne), var(--font-geist-sans);
+  --color-main: var(--main);
+  --color-main-foreground: var(--main-foreground);
+  --color-bw-foreground: var(--bw-foreground);
+  --color-sidebar-ring: var(--sidebar-ring);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar: var(--sidebar);
+
+  --color-ring: var(--ring);
+  --color-input: var(--input);
+  --color-border: var(--border);
+  --color-destructive: var(--destructive);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-accent: var(--accent);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-muted: var(--muted);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-secondary: var(--secondary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-primary: var(--primary);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-popover: var(--popover);
+  --color-card-foreground: var(--card-foreground);
+  --color-card: var(--card);
+
+  /* Brutalism specific variables */
+  --color-brutal-orange: var(--brutal-orange);
+  --color-brutal-teal: var(--brutal-teal);
+  --color-brutal-yellow: var(--brutal-yellow);
+  --color-brutal-cream: var(--brutal-cream);
+  --color-brutal-black: var(--brutal-black);
+
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-base: var(--radius);
+}
+
+:root {
+  --radius: 0px;
+  /* Neo Brutalism often uses sharp or very slightly rounded edges. Let's stick to 0 or 4px */
+
+  /* Neo Brutalism Core Colors */
+  --brutal-cream: #FDFBF7;
+  --brutal-orange: #005BFF;
+  /* Mengganti nama var tidak masalah, tapi agar komponen tidak error kita timpa isinya dengan Biru */
+  --brutal-teal: #FF007F;
+  /* Aksen Pink */
+  --brutal-yellow: #FFD500;
+  --brutal-black: #111111;
+  --main: var(--brutal-orange);
+  /* Orange sekarang isinya biru cerah */
+  --main-foreground: #FFFFFF;
+  /* Ganti teks button biru jadi putih agar lebih terlihat */
+
+  /* Shadcn Map */
+  --background: var(--brutal-cream);
+  --foreground: var(--brutal-black);
+  --bw-foreground: var(--brutal-cream);
+
+  --card: var(--brutal-cream);
+  --card-foreground: var(--brutal-black);
+  --popover: var(--brutal-cream);
+  --popover-foreground: var(--brutal-black);
+  --primary: var(--brutal-orange);
+  --primary-foreground: #FFFFFF;
+  --secondary: var(--brutal-teal);
+  --secondary-foreground: #FFFFFF;
+  --muted: #E0E0E0;
+  --muted-foreground: #555555;
+  --accent: var(--brutal-yellow);
+  --accent-foreground: var(--brutal-black);
+  --destructive: #FF4742;
+  --border: var(--brutal-black);
+  --input: var(--brutal-black);
+  --ring: var(--brutal-orange);
+
+  --sidebar: var(--brutal-cream);
+  --sidebar-foreground: var(--brutal-black);
+  --sidebar-primary: var(--brutal-orange);
+  --sidebar-primary-foreground: var(--brutal-black);
+  --sidebar-accent: var(--brutal-yellow);
+  --sidebar-accent-foreground: var(--brutal-black);
+  --sidebar-border: var(--brutal-black);
+  --sidebar-ring: var(--brutal-orange);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans;
+  }
+}
+
+@layer utilities {
+  .brutal-shadow {
+    box-shadow: 4px 4px 0px var(--brutal-black);
+    transition: all 0.2s ease-in-out;
+  }
+
+  .brutal-shadow:hover {
+    box-shadow: 2px 2px 0px var(--brutal-black);
+    transform: translate(2px, 2px);
+  }
+
+  .bg-dot-pattern {
+    background-image: radial-gradient(var(--brutal-black) 1px, transparent 1px);
+    background-size: 20px 20px;
+  }
+}
