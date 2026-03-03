@@ -15,7 +15,7 @@ export function HeroSection() {
 
                 {/* Left Content */}
                 <motion.div
-                    className="lg:col-span-7 flex flex-col items-start gap-6"
+                    className="lg:col-span-7 flex flex-col items-start gap-6 order-last lg:order-first mt-8 lg:mt-0"
                     initial={{ opacity: 0, y: 30 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.5 }}
@@ -65,7 +65,7 @@ export function HeroSection() {
 
                 {/* Right Photo */}
                 <motion.div
-                    className="lg:col-span-5 flex justify-center lg:justify-end"
+                    className="lg:col-span-5 flex justify-center lg:justify-end order-first lg:order-last"
                     initial={{ opacity: 0, scale: 0.9 }}
                     animate={{ opacity: 1, scale: 1 }}
                     transition={{ duration: 0.5, delay: 0.2 }}
