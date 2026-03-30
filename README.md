@@ -1,36 +1,44 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Portofolio Pribadi - Gusnaldi Kristiadi Syah
 
-## Getting Started
+Selamat datang di repositori portofolio digital saya. Aplikasi web ini dibangun menggunakan **Next.js** dan berfungsi untuk menampilkan rekam jejak profesional, pengalaman kerja, publikasi, dan kumpulan proyek yang telah saya kerjakan (seperti BiblioSheet dan SUAKA).
 
-First, run the development server:
+## 🚀 Fitur
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- **Profil Profesional:** Ringkasan latar belakang, keahlian, dan keterampilan teknis (khususnya untuk bidang kepustakawanan, analisis bibliometrik, dan pengelolaan sistem informasi).
+- **Pengalaman & Pendidikan:** Riwayat kerja komprehensif dari operasional hingga manajerial sistem repositori.
+- **Showcase Proyek:** Dokumentasi proyek-proyek terbaru yang mengintegrasikan teknologi terapan dengan kebutuhan tata kelola perpustakaan inovatif (contoh: BiblioSheet untuk analisis data publikasi, serta pemanfaatan Claude Code untuk membuat SUAKA).
+- **Karya & Publikasi:** Akses cepat ke jurnal/prosiding dan karya tulis yang sudah terbit.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🛠️ Tech Stack
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- [Next.js](https://nextjs.org/) - Framework dasar berbasis React
+- TypeScript
+- Node.js & Ekosistem NPM (Tailwind, dll)
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 💻 Cara Menjalankan Secara Lokal
 
-## Learn More
+Jika Anda ingin melihat atau mengembangkan lebih lanjut *source code* portofolio ini di komputer secara mandiri:
 
-To learn more about Next.js, take a look at the following resources:
+1. Salin (clone) repositori ini:
+   ```bash
+   git clone https://github.com/gusnaldikrist/portofolio.git
+   ```
+2. Pindah ke folder proyek:
+   ```bash
+   cd portofolio
+   ```
+3. Unduh semua dependensi paket:
+   ```bash
+   npm install
+   ```
+4. Mulai server *development*:
+   ```bash
+   npm run dev
+   ```
+5. Akses portofolionya melalui peramban (browser) di **[http://localhost:3000](http://localhost:3000)** (hanya muncul saat server dijalankan secara lokal).
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 📬 Kontak
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Untuk diskusi, diskusi riset/analisis, atau peluang kolaborasi bersama, silakan hubungi saya:
+- **Email**: gusnaldikrist@gmail.com
+- **LinkedIn**: [id.linkedin.com/in/tristiadis](https://id.linkedin.com/in/tristiadis)
