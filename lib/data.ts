@@ -73,6 +73,16 @@ export const cvData = {
     },
     proyek: [
         {
+            id: "bibliosheet",
+            nama: "BiblioSheet",
+            tech: ["Claude Code", "Next.js", "Python Flask"],
+            link: "https://github.com/gusnaldikrist/BiblioDash",
+            images: ["bsht1.png", "bsht2.png", "bsht3.png"],
+            deskripsi: [
+                "Tool web analisis bibliometrik berbasis file .bib (BibTeX) sebagai pelengkap fungsional perangkat lunak visualisasi untuk ekstraksi data publikasi ilmiah dalam format tabel .xlsx secara otomatis."
+            ]
+        },
+        {
             id: "suaka",
             nama: "SUAKA (Sistem Unggah Akses Karya Ilmiah)",
             tech: ["Claude Code"],
